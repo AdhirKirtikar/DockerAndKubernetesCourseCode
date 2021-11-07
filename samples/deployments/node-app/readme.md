@@ -6,4 +6,6 @@
 
 1. Run `kubectl apply -f node-app.service.yml` to get the service running.
 
-1. Visit `https://localhost:8080` in your browser
+1. kubectl proxy --port 80
+
+1. Visit `https://localhost:80` in your browser

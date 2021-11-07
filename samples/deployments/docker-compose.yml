@@ -3,19 +3,31 @@ version: '3.7'
 services:
 
   node-app-v1:
-    image: node-app:1.0
+    image: adhirkirtikar/node-app:1.0
     build:
       context: ./node-app/v1
       dockerfile: dockerfile    
 
   node-app-v2:
-    image: node-app:2.0
+    image: adhirkirtikar/node-app:2.0
     build:
       context: ./node-app/v2
       dockerfile: dockerfile 
 
   node-app-v3:
-    image: node-app:3.0
+    image: adhirkirtikar/node-app:3.0
     build:
       context: ./node-app/v3
       dockerfile: dockerfile
+
+  node-app-v4:
+    image: adhirkirtikar/node-app:4.0
+    build:
+      context: ./node-app/v4
+      dockerfile: dockerfile      
+
+  node-app-v5:
+    image: adhirkirtikar/node-app:5.0
+    build:
+      context: ./node-app/v5
+      dockerfile: dockerfile          
