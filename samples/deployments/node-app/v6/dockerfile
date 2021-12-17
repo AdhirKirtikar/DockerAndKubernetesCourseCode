@@ -1,0 +1,6 @@
+FROM node:alpine
+LABEL author="Adhir Kirtikar"
+WORKDIR /usr/app
+COPY server.js /usr/app/server.js
+RUN npm install prom-client
+ENTRYPOINT ["node", "server.js"]

@@ -31,8 +31,8 @@ register.setDefaultLabels({
 })
 
 // console.log is for Kubernetes & logger.log is for Persistent Volume log file
-console.log(getTimeStamp() + "Node v5 server starting...");
-logger.log(getTimeStamp() + "Node v5 server starting...");
+console.log(getTimeStamp() + "Node v6 server starting...");
+logger.log(getTimeStamp() + "Node v6 server starting...");
 
 // Enable the collection of default metrics
 collectDefaultMetrics({ register })
@@ -57,7 +57,7 @@ const server = http.createServer(async (req, res) => {
     console.log(getTimeStamp() + "Request received from: " + req.socket.remoteAddress + " (" + req.headers.host + ")");
     logger.log(getTimeStamp() + "Request received from: " + req.socket.remoteAddress + " (" + req.headers.host + ")");
     res.writeHead(200);
-    res.end(getTimeStamp() + "Node v5 running in a pod: " + os.hostname() + " running on " + os.platform() + " [" + os.type() + "] (" + os.arch() + ")\n");   
+    res.end(getTimeStamp() + "Node v6 running in a pod: " + os.hostname() + " running on " + os.platform() + " [" + os.type() + "] (" + os.arch() + ")\n");   
   }
 })
 

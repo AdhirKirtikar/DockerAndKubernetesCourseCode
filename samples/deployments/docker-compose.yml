@@ -31,3 +31,9 @@ services:
     build:
       context: ./node-app/v5
       dockerfile: dockerfile          
+
+  node-app-v6:
+    image: adhirkirtikar/node-app:6.0
+    build:
+      context: ./node-app/v6
+      dockerfile: dockerfile             
